@@ -12,7 +12,7 @@ A plug-in for the Nuxeo Claim demo handles by Nuxeo Solution Engineering (aka Pr
 
 ### Geodistance Search
 
-The Marketplace package deploys the `nuxeo-claim-demo-tools` configuration template, which adds the `claim:incidenttLocationForES` string field to the default Elasticsearch mapping.
+The Marketplace package deploys the `nuxeo-claim-demo-tools` configuration template, which adds the `claim:incidentLocationForES` string field to the default Elasticsearch mapping.
 
 This field is used in the demo when searching for claims around n Kms/Miles from the current one. This _geodistance search_ requires the usage of Elasticsearch and a specific string field concatenating latitude and longitude.
 
