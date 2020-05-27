@@ -1,6 +1,8 @@
 # About nuxeo-claim-demo-tools
 
-A plug-in for the Nuxeo Claim demo handles by Nuxeo Presales team
+A plug-in for the Nuxeo Claim demo handles by Nuxeo Solution Engineering (aka Presales) team.
+
+[![Build Status](https://qa.nuxeo.org/jenkins/buildStatus/icon?job=Sandbox/sandbox_nuxeo-claim-demo-tools-master)](https://qa.nuxeo.org/jenkins/view/Sandbox/job/Sandbox/job/sandbox_nuxeo-claim-demo-tools-master/)
 
 ## List of Features (Details below)
 
