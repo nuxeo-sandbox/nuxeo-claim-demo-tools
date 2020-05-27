@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>nuxeo.claim.demo.tools</groupId>
+    <artifactId>nuxeo-claim-demo-tools-parent</artifactId>
+    <version>10.10-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>nuxeo-claim-demo-tools-package</artifactId>
+  <packaging>zip</packaging>
+  <name>Nuxeo claim demo tools package - Nuxeo claim demo tools</name>
+
+  <dependencies>
+    <!-- Base distribution(s) for the MP -->
+    <dependency>
+      <groupId>org.nuxeo.ecm.distribution</groupId>
+      <artifactId>nuxeo-nxr-server</artifactId>
+      <type>zip</type>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Additional bundles to be deployed by the MP -->
+    <dependency>
+      <groupId>nuxeo.claim.demo.tools</groupId>
+      <artifactId>nuxeo-claim-demo-tools-core</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.nuxeo.build</groupId>
+        <artifactId>ant-assembly-maven-plugin</artifactId>
+        <version>2.1.3</version>
+        <configuration>
+          <buildFiles>
+            <buildFile>${basedir}/src/main/assemble/assembly.xml</buildFile>
+          </buildFiles>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+</project>
