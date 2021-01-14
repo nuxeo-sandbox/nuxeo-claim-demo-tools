@@ -18,6 +18,8 @@
   <platforms>
     <platform>server-@DISTRIB_VERSION@</platform>
     <platform>server-@DISTRIB_VERSION@-HF*</platform>
+    <platform>server-2021.*</platform>
+    <platform>server-11.*</platform>
   </platforms>
   <!-- Dependencies on other packages -->
   <!-- <dependencies> -->
