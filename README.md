@@ -2,8 +2,6 @@
 
 A plug-in for the Nuxeo Claim demo handles by Nuxeo Solution Engineering (aka Presales) team.
 
-[![Build Status](https://qa.nuxeo.org/jenkins/buildStatus/icon?job=Sandbox/sandbox_nuxeo-claim-demo-tools-master)](https://qa.nuxeo.org/jenkins/view/Sandbox/job/Sandbox/job/nuxeo-claim-demo-tools)
-
 ## Target versions
 This plugin is built against Nuxeo 10.10 but has been updated so it can also be deployed using the next versions, 2021 (LTS) or 11.n (Cloud version)
 
