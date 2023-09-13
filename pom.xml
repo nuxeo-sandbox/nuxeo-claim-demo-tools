@@ -9,7 +9,7 @@
 
   <groupId>nuxeo.claim.demo.tools</groupId>
   <artifactId>nuxeo-claim-demo-tools-parent</artifactId>
-  <version>2021.0.0</version>
+  <version>2021.0.1-SNAPSHOT</version>
   <name>Nuxeo claim demo tools parent</name>
   <description>Utilities for Nuxeo Claim Demo</description>
   <packaging>pom</packaging>
