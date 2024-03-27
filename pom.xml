@@ -4,12 +4,12 @@
   <parent>
     <groupId>org.nuxeo</groupId>
     <artifactId>nuxeo-parent</artifactId>
-    <version>2021.18</version>
+    <version>2023.7</version>
   </parent>
 
   <groupId>nuxeo.claim.demo.tools</groupId>
   <artifactId>nuxeo-claim-demo-tools-parent</artifactId>
-  <version>2021.0.1-SNAPSHOT</version>
+  <version>2023.0.2-SNAPSHOT</version>
   <name>Nuxeo claim demo tools parent</name>
   <description>Utilities for Nuxeo Claim Demo</description>
   <packaging>pom</packaging>
