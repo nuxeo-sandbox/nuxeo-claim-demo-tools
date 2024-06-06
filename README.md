@@ -1,27 +1,23 @@
 # About nuxeo-claim-demo-tools
 
-A plug-in for the Nuxeo Claim demo handles by Nuxeo Solution Engineering (aka Presales) team.
+A Nuxeo Package for the Nuxeo Claim demo handled by Hyland Presales team.
 
-## Target versions
-This plugin is built against Nuxeo 10.10 but has been updated so it can also be deployed using the next versions, 2021 (LTS) or 11.n (Cloud version)
-
-## List of Features (Details below)
+# List of Features (Details below)
 
 * [Geodistance Search](#geodistance-search): Modify the Elasticsearch mapping
 * . . . (maybe more to come) . . .
 
-
-### Geodistance Search
+# Geodistance Search
 
 The Marketplace package deploys the `nuxeo-claim-demo-tools` configuration template, which adds the `claim:incidentLocationForES` string field to the default Elasticsearch mapping.
 
 This field is used in the demo when searching for claims around n Kms/Miles from the current one. This _geodistance search_ requires the usage of Elasticsearch and a specific string field concatenating latitude and longitude.
 
-#### Before Deploying this Plugin:
+# Before Deploying this Plugin:
 
 1. Make sure you do have a `claim:incidentLocationForES` string field, even if you don't use it
-2. *WARNING WARNING*: Check another plugin does not yet deploy an Elasticsearch custom mapping, because the "latest" will apply and override any previous mapping. The latest is the one found at the end of the `nuxeo.templates` parameter in `nuxeo.conf`.
-  * If you have several plugins modifying the Elasticsearch mapping, as of Nuxeo 10.10 the only choice you have is to create your own configuration template that merges all the changes and make sure it is the latest to be deployed.
+2. *WARNING WARNING*: Make sure another plugin does not yet deploy an Elasticsearch custom mapping, because the "last" will apply and override any previous mapping. The last is the one found at the end of the `nuxeo.templates` parameter in `nuxeo.conf`.
+  * If you have several plugins that modify the Elasticsearch mapping, the only choice you have is to create your own configuration template that merges all the changes, and make sure it is the last to be deployed.
 
 #### After Deploying this Plugin
 You must reindex Elasticsearch.
@@ -29,7 +25,7 @@ You must reindex Elasticsearch.
 
 ## Build
 
-_Note_: This project expects specific schemas to be implemented in your solution and depends on the Studio project deployed in Nuxeo Claim Demo => If you plan to use it (and not just look at what's inside) then make sure your own project have the same schemas and fields (`Claim` document with expected lifecycle states, ...)
+_Note_: This project expects specific schemas to be implemented in your solution and depends on the Studio project deployed in Nuxeo Claim Demo => If you plan to use it (and not just look at what's inside) then make sure your own project has the same schemas and fields (`Claim` document with expected lifecycle states, ...)
 
 Assuming maven is correctly setup on your computer:
 
