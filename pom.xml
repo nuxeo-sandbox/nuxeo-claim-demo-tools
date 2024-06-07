@@ -32,6 +32,21 @@
   <developers />
   <distributionManagement />
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>nuxeo.claim.demo.tools</groupId>
+        <artifactId>nuxeo-claim-demo-tools-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nuxeo.claim.demo.tools</groupId>
+        <artifactId>nuxeo-claim-demo-tools-package</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <repositories>
     <repository>
       <id>maven-public</id>
@@ -45,8 +60,8 @@
       </snapshots>
     </repository>
     <repository>
-      <id>maven-internal</id>
-      <url>https://packages.nuxeo.com/repository/maven-internal/</url>
+      <id>maven-private</id>
+      <url>https://packages.nuxeo.com/repository/maven-private/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -80,18 +95,5 @@
       </snapshots>
     </pluginRepository>
   </pluginRepositories>
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>nuxeo.claim.demo.tools</groupId>
-        <artifactId>nuxeo-claim-demo-tools-core</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nuxeo.claim.demo.tools</groupId>
-        <artifactId>nuxeo-claim-demo-tools-package</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+
 </project>
