@@ -4,7 +4,7 @@
   <parent>
     <groupId>nuxeo.claim.demo.tools</groupId>
     <artifactId>nuxeo-claim-demo-tools-parent</artifactId>
-    <version>2023.0.0</version>
+    <version>2023.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>nuxeo-claim-demo-tools-core</artifactId>
   <name>Nuxeo claim demo tools core</name>
